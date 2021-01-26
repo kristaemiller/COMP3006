@@ -5,7 +5,6 @@
 
 import sys
 
-
 def add_frequencies(d, file, remove_case):
     '''This function takes in three parameters: a dictionary
     d, a file object file, and a boolean remove_case.  The dictionary
@@ -20,21 +19,21 @@ def add_frequencies(d, file, remove_case):
         content = f.readlines()
 
     # read characters in each line and add to a dictionary
-    for line in content:
-        for char in line:
-            if remove_case == False:  # checks the content of remove_case
-                if char in d:
-                    d[char] += 1
-                else:
-                    if char != '\n' and char != ' ':
-                        d[char] = 1  # adds new character to the dictionary
-                    else:  # if remove_case is True, convert characters to lower
-                        low = char.lower()
-                        if low in d:
-                            d[low] += 1
-                        else:
-                            if low != '\n' and low != ' ':
-                                d[low] = 1
+        for line in content:
+            for char in line:
+                if remove_case == True:  # checks the content of remove_case
+                    if char in d:
+                        d[char] += 1
+                    else:
+                        if char != '\n' and char != ' ':
+                            d[char] = 1  # adds new character to the dictionary
+                else:  # if remove_case is True, convert characters to lower
+                    low = char.lower()
+                    if low in d:
+                        d[low] += 1
+                    else:
+                        if low != '\n' and low != ' ':
+                            d[low] = 1
 
 
 def main():
@@ -82,8 +81,6 @@ def main():
     with open('Me.txt', 'w') as f:  # write a text file with letters and frequencies
         for letter in d:
             freq = d[letter]
-            f.write(letter + ',' + str(
-                freq) + '\n')  # ',' separates into CSV format '\n' gives new line for each character
-
+            f.write(letter + ',' + str(freq) + '\n')  # ',' separates into CSV format '\n' gives new line for each character
 
 main()
