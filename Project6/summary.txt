@@ -1,0 +1,66 @@
+statistics summary: 
+
+column headers: 
+['Name Of The Player', 'G', 'GS', 'MPG', 'FG%', '3P%', 'FT%', 'OFF', 'DEF', 'PPG', 'RPG', 'APG', 'SPG', 'BPG', 'TO', 'PF'] 
+
+first three rows of data: 
+  Name Of The Player  G  GS   MPG   FG%   3P%  ...  RPG  APG  SPG  BPG   TO   PF
+0        Will Barton  2   1  19.0  38.5  28.6  ...  2.0  3.5  1.5  0.0  0.0  0.5
+1            Bol Bol  3   0  11.7  42.1  33.3  ...  5.7  0.7  0.0  0.0  0.7  0.3
+2   Facundo Campazzo  3   0  16.0  30.8  25.0  ...  0.7  2.0  1.0  0.3  1.7  2.7
+
+[3 rows x 16 columns] 
+
+max values for each column= 
+G        3.0
+GS       3.0
+MPG     22.7
+FG%    100.0
+3P%    100.0
+FT%    100.0
+OFF      2.3
+DEF      6.3
+PPG     16.7
+RPG      8.7
+APG      6.3
+SPG      2.0
+BPG      1.3
+TO       3.0
+PF       4.0
+dtype: float64 
+
+mean values for each column= 
+G       2.588235
+GS      0.882353
+MPG    15.194118
+FG%    46.005882
+3P%    36.711765
+FT%    45.182353
+OFF     0.794118
+DEF     2.417647
+PPG     7.317647
+RPG     3.235294
+APG     1.882353
+SPG     0.588235
+BPG     0.394118
+TO      1.076471
+PF      1.594118
+dtype: float64 
+
+standard deviation values for each column= 
+G       0.795206
+GS      1.317306
+MPG     6.548232
+FG%    22.992702
+3P%    25.848353
+FT%    41.611540
+OFF     0.836264
+DEF     1.799040
+PPG     4.692579
+RPG     2.425629
+APG     1.535511
+SPG     0.610207
+BPG     0.416039
+TO      0.910720
+PF      1.286211
+dtype: float64
